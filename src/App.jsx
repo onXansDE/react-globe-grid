@@ -1,11 +1,15 @@
 import './App.css'
 import { Grid } from './grid';
+import { HeaderBar } from './header';
+import { useState } from 'react';
 
 function App() {
+
+  const [isActive, setIsActive] = useState(false);
   return (
     <>
-      <h1 className='headding'>Warroom v0.0.1</h1>
-      <Grid></Grid>
+      <HeaderBar toggleIsActive={() => {setIsActive(!isActive)}}></HeaderBar>
+      <Grid isActive={isActive} ></Grid>
     </>
   );
 }

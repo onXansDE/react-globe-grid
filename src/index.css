@@ -26,6 +26,15 @@ body {
 .headding {
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.mainheadding {
   color: white;
 }
 

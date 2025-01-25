@@ -24,6 +24,14 @@ Ion.defaultAccessToken = token;
 export function GlobeWindow() {
   return (
     <Viewer timeline={false} fullscreenButton={false} animation={false} style={{ height: '100%', width: '100%' }}>
+    <Entity position={position} name='New York'>
+      <PointGraphics pixelSize={10}/>
+      <EntityDescription>
+        <h1>Ney York City</h1>
+        <p>New York City, often simply called New York, is the most populous city in the United States. Known for its significant impact on commerce, finance, media, art, fashion, research, technology, education, and entertainment, it is an important center for international diplomacy and has been described as the cultural, financial, and media capital of the world.</p>
+      </EntityDescription>
+    </Entity>
+    <GeoJsonDataSource data={data}/>
     </Viewer>
   );
 }
