@@ -17,12 +17,12 @@ export function Grid() {
         layout={layout}
         cols={6}
         rowHeight={90}
-        width={1200}
+        width={1440}
       >
-        <div key="a"><LiveUpdatesView/></div>
-        <div key="b"><GlobeWindow/></div>
-        <div key="c"><DetailsView/></div>
-        <div key="d"><DetailsView/></div>
+        <div className="gridItem" key="a"><LiveUpdatesView/></div>
+        <div className="gridItem" key="b"><GlobeWindow/></div>
+        <div className="gridItem" key="c"><DetailsView/></div>
+        <div className="gridItem" key="d"><DetailsView/></div>
       </GridLayout>
     );
   }

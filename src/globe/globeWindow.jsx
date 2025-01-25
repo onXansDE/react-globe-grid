@@ -1,5 +1,6 @@
-import { Viewer, Entity, PointGraphics, EntityDescription, GeoJsonDataSource } from 'resium'
-import { Cartesian3 } from "cesium";
+import { Viewer, Entity, PointGraphics, EntityDescription, GeoJsonDataSource, Globe } from 'resium'
+import { Cartesian3, Ion } from "cesium";
+import { token } from "../../config.json"
 
 // New York Point
 const position = Cartesian3.fromDegrees(-74.0707383, 40.7117244, 100);
@@ -18,17 +19,11 @@ const data = {
   },
 };
 
+Ion.defaultAccessToken = token;
+
 export function GlobeWindow() {
   return (
-    <Viewer>
-      <Entity position={position}>
-        <PointGraphics pixelSize={10}/>
-        <EntityDescription>
-          <h1>New York City</h1>
-          <p>This point marks a location in New York City, known for its iconic skyline and vibrant culture.</p>
-        </EntityDescription>
-        <GeoJsonDataSource data={data} />
-      </Entity> 
+    <Viewer timeline={false} fullscreenButton={false} animation={false}>
     </Viewer>
   );
 }
