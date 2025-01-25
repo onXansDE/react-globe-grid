@@ -38,13 +38,6 @@ body {
   color: white;
 }
 
-.gridItem {
-  background-color: rgb(0, 31, 66);
-  color: white;
-  box-shadow: 0 0 10px 2px aqua;
-  overflow: hidden;
-}
-
 .liveupdates {
   height: 100%;
   overflow: scroll;
