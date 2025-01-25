@@ -1,5 +1,7 @@
 # Warroom v0.0.1
 
+![Demo](image.png)
+
 ## Install
 
 1. Clone Repo
