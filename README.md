@@ -1,4 +1,4 @@
-# Warroom v0.0.1
+# Warroom v0.0.2
 
 ![Demo](image.png)
 
