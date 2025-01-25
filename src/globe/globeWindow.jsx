@@ -23,7 +23,7 @@ Ion.defaultAccessToken = token;
 
 export function GlobeWindow() {
   return (
-    <Viewer timeline={false} fullscreenButton={false} animation={false}>
+    <Viewer timeline={false} fullscreenButton={false} animation={false} style={{ height: '100%', width: '100%' }}>
     </Viewer>
   );
 }

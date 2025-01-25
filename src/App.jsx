@@ -4,7 +4,7 @@ import { Grid } from './grid';
 function App() {
   return (
     <>
-      <h1>Warroom v0.0.1</h1>
+      <h1 className='headding'>Warroom v0.0.1</h1>
       <Grid></Grid>
     </>
   );
